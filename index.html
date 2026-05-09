@@ -1,97 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vani | Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#home">Vani</a>
-        <nav class="site-nav">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-      <div class="hero container" id="home">
-        <p class="eyebrow">Welcome to my personal website</p>
-        <h1 id="hero-title">Hi, I’m Vani.</h1>
-        <p class="hero-text">
-          I am an ECE student learning AI and Web Development. I build clean,
-          responsive websites and explore intelligent systems.
-        </p>
-        <a class="button" href="#projects">See my projects</a>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vaniswitha Portfolio</title>
 
-    <main class="container">
-      <section id="about" class="section card">
-        <h2>About Me</h2>
-        <p>
-          I am passionate about technology, software, and creative problem
-          solving. Currently studying Electronics and Communication Engineering,
-          I enjoy working on web development and AI projects that make a real
-          impact.
-        </p>
-      </section>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
 
-      <section id="skills" class="section card">
-        <h2>Skills</h2>
-        <div class="skill-grid">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>Python</span>
-          <span>AI / ML Basics</span>
-          <span>Responsive Design</span>
-        </div>
-      </section>
+  <!-- Icons -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
-      <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="project-grid">
-          <article class="project-card">
-            <h3>AI Chatbot</h3>
-            <p>
-              Designed an intelligent chatbot with basic natural language
-              understanding for interactive user support.
-            </p>
-          </article>
-          <article class="project-card">
-            <h3>Prediction Model</h3>
-            <p>
-              Built a prediction project using data analysis, model training, and
-              visualization techniques.
-            </p>
-          </article>
-          <article class="project-card">
-            <h3>Personal Portfolio</h3>
-            <p>
-              Created this responsive website to showcase my skills, projects,
-              and contact details.
-            </p>
-          </article>
-        </div>
-      </section>
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-      <section id="contact" class="section card contact-section">
-        <h2>Contact</h2>
-        <p>
-          Want to connect? Send an email or find me on professional networks.
-        </p>
-        <a class="contact-link" href="mailto:yarragudivaniswithaexample.com">yarragudivaniswitha@gmail.com</a>
-      </section>
-    </main>
+</head>
+<body>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>Designed and built by Vani. © <span id="year"></span></p>
-      </div>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+<!-- PARTICLE BACKGROUND -->
+<div id="particles-js"></div>
+
+<!-- NAVBAR -->
+<nav>
+  <h2 class="logo">Vaniswitha</h2>
+
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+  <div class="hero-text" data-aos="fade-right">
+
+    <h1>Hello, I'm</h1>
+
+    <h2>Vaniswitha ushaswini</h2>
+
+    <h3>
+      <span class="typing"></span>
+    </h3>
+
+    <p>
+      Passionate ECE student with strong interest in Artificial Intelligence and Web Development.
+      Always eager to learn innovative technologies and build impactful projects.
+    </p>
+
+    <div class="buttons">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="Resume (1).pdf" class="btn2">Download Resume</a>
+    </div>
+
+  </div>
+
+  <div class="hero-image" data-aos="fade-left">
+    <img src="myphoto.jpeg" alt="">
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about" data-aos="fade-up">
+
+  <h2>About Me</h2>
+
+  <div class="about-box">
+
+    <p>
+      I am a Third Year ECE student passionate about AI and futuristic technologies.
+      I love building creative projects and continuously learning new skills.
+      My interests include Artificial Intelligence, Web Development, and innovative problem solving.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+
+  <h2 data-aos="fade-up">Skills</h2>
+
+  <div class="skill-container">
+
+    <div class="skill-card" data-aos="zoom-in">Python</div>
+    <div class="skill-card" data-aos="zoom-in">HTML</div>
+    <div class="skill-card" data-aos="zoom-in">CSS</div>
+    <div class="skill-card" data-aos="zoom-in">JavaScript</div>
+    <div class="skill-card" data-aos="zoom-in">GitHub</div>
+    <div class="skill-card" data-aos="zoom-in">AI/ML</div>
+    <div class="skill-card" data-aos="zoom-in">Problem Solving</div>
+
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+
+  <h2 data-aos="fade-up">Projects</h2>
+
+  <div class="project-container">
+
+    <div class="project-card" data-aos="flip-left">
+
+      <h3>Emotion Prediction Using Text</h3>
+
+      <p>
+        AI based emotion prediction system using Python and NLP concepts.
+      </p>
+
+    </div>
+
+    <div class="project-card" data-aos="flip-right">
+
+      <h3>Laptop Control Using Gestures</h3>
+
+      <p>
+        Gesture controlled laptop interaction system using AI and Computer Vision.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact" data-aos="fade-up">
+
+  <h2>Contact Me</h2>
+
+  <p>Email:yarragudivaniswitha@gmail.com</p>
+
+  <div class="socials">
+
+    <a href="https://github.com/vanibuilds"><i class="fab fa-github"></i></a>
+
+    <a href="https://www.linkedin.com/in/vaniswitha-ushaswini-575192408/"><i class="fab fa-linkedin"></i></a>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Vaniswitha| AI Developer</p>
+</footer>
+
+<!-- TYPING -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- PARTICLES -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
 </html>
